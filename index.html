@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SITE 4</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    
+<ul>
+    <li id="menu">
+        Menü
+    </li>
+    <li class="li" id="anasayfabtn">
+        Anasayfa
+    </li>
+    <li class="li" id="hakkimizdabtn">
+        Hakkımızda
+    </li>
+    <li class="li" id="referanslarbtn">
+        Referanslar
+    </li>
+    <li class="li" id="bizeulasinbtn">
+       Bize Ulaşın
+    </li>
+</ul>
+
+<header id="anasayfa" class="page">
+    <div>
+    <h1>ANASAYFA</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis aperiam at excepturi delectus vero tempora fuga, maiores corporis dignissimos necessitatibus vel eos ex voluptate enim cupiditate animi fugiat, optio autem.</p>
+    </div>
+</header>
+
+<section id="hakkimizda" class="page">
+    <div>
+    <h1>HAKKIMIZDA</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, in dolores? Beatae aliquam blanditiis itaque cum asperiores tempora ut facere expedita et fugit vitae nulla, est soluta ullam nobis commodi!</p>
+    </div>
+    
+</section>
+
+<section id="referanslar" class="page">
+    <div>
+    <h1>REFERANSLAR</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In rerum eum, eveniet sint hic, optio laudantium itaque, quisquam delectus distinctio nobis voluptates? Praesentium commodi neque recusandae, dolore distinctio fuga similique.</p>
+    </div>
+</section>
+
+
+<section id="bizeulasin" class="page">
+    <div>
+        <h1>BİZE ULAŞIN</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi molestias ab explicabo culpa, aliquid officia non recusandae debitis iste maiores necessitatibus ipsa aut doloremque assumenda tempore illum? Aut, magnam laudantium.</p>
+    </div>
+</section>
+
+
+
+<script>
+
+$(document).ready(function() {
+$(".li").hide();
+
+$("#menu").mouseover(function() {
+$(".li").show();
+});
+
+$("ul").mouseleave(function() {
+$(".li").hide();
+});
+
+$("section").hide();  
+
+$("#anasayfabtn").click(function() {
+$(".page").hide();  
+$("#anasayfa").show();
+})
+
+$("#hakkimizdabtn").click(function() {
+$(".page").hide();  
+$("#hakkimizda").show();
+})
+
+$("#referanslarbtn").click(function() {
+$(".page").hide();  
+$("#referanslar").show();
+});
+
+$("#bizeulasinbtn").click(function() {
+$(".page").hide();  
+$("#bizeulasin").show();
+})
+})
+</script>
+</body>
+</html>
